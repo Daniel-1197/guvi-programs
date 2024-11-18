@@ -19,8 +19,8 @@ n = int(input("Enter the number: "))
 n = str(n)
 first_digit = int(n[0])
 last_digit = int(n[-1])
-sum = first_digit + last_digit
-print(sum)
+sum1 = first_digit + last_digit
+print(sum1)
 
 # 6. DUPLICATES IN THE THREE LISTS
 
