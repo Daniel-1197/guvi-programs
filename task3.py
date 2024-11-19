@@ -106,5 +106,5 @@ for i in range(len(lst2)):
                 triplet.append(lst2[k])
                 print("Yes a sublist found: ",triplet)
             else:
-                print("There is no such sublist")
+                break
 
