@@ -13,6 +13,19 @@ for i in lst1:
 print(lst_odd)
 print(lst_even)
 
+# 2. COUNT AND LIST OF ALL PRIME NUMBERS
+
+lst2 =[10,501,22,37,100,999,87,351]
+lst_prime=[]
+
+for i in lst2:
+    for n in range(2,int(i ** 0.5) + 1):
+        if i % n == 0:
+            break
+    else:
+            lst_prime.append(i)
+print("Total count of prime numbers: ",len(lst_prime))
+print("List of prime numbers; ",lst_prime)
 # 4.SUM OF FIRST AND LAST DIGIT OF AN INTEGER
 
 n = int(input("Enter the number: "))
