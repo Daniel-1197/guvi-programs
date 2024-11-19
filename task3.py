@@ -80,15 +80,11 @@ print("List of prime numbers; ",lst_prime)
 
 lst1 = [10,20,30,9]
 target = 59
-triplet = []
 for i in range(len(lst1)):
     for j in range(i + 1,len(lst1)):
         for k in range(j + 1,len(lst1)):
             if lst1[i] + lst1[j] + lst1[k] == target:
-                triplet.append(lst1[i])
-                triplet.append(lst1[j])
-                triplet.append(lst1[k])
-                print(triplet)
+                print([lst1[i],lst1[j],lst1[k]])
             else:
                 break
 
@@ -96,15 +92,12 @@ for i in range(len(lst1)):
 
 lst2 = [4,2,-3,1,6]
 target = 0
-triplet = []
 for i in range(len(lst2)):
     for j in range(i+1,len(lst2)):
         for k in range(j+1,len(lst2)):
             if lst2[i] + lst2[j] + lst2[k] == 0:
-                triplet.append(lst2[i])
-                triplet.append(lst2[j])
-                triplet.append(lst2[k])
-                print("Yes a sublist found: ",triplet)
+                print("Yes a sublist found: ",[lst2[i], lst2[j], lst2[k]])
             else:
                 break
+
 
