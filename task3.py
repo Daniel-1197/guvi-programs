@@ -26,6 +26,7 @@ for i in lst2:
             lst_prime.append(i)
 print("Total count of prime numbers: ",len(lst_prime))
 print("List of prime numbers; ",lst_prime)
+
 # 4.SUM OF FIRST AND LAST DIGIT OF AN INTEGER
 
 n = int(input("Enter the number: "))
