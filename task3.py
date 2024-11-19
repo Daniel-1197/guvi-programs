@@ -58,24 +58,6 @@ given_lst.sort()
 min_element = given_lst[0]
 print("Minimum element is: ",min_element)
 
-# 2. COUNT AND LIST OF ALL PRIME NUMBERS
-
-lst2 =[10,501,22,37,100,999,87,351]
-lst_prime=[]
-
-for i in lst2:
-    is_prime = True
-    for n in range(2,int(i ** 0.5) + 1):
-        if i % n == 0:
-            is_prime = False
-            break
-    if is_prime == True and i >1 :
-            lst_prime.append(i)
-
-
-print("Total count of prime numbers: ",len(lst_prime))
-print("List of prime numbers; ",lst_prime)
-
 # 9. Find triplet in the list [10,20,30,9] whose sum is 59.
 
 lst1 = [10,20,30,9]
