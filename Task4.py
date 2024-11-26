@@ -40,7 +40,7 @@ Shape.area()
 Shape.perimeter()
 
 # 4. convert the UML diagram into python class and its methods
-
+# Part - A
 class TV:
     def __init__(self,brand,price,inches,onoff_status):
         self.brand = brand
