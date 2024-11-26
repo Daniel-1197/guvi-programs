@@ -38,3 +38,34 @@ class Circle:
 Shape = Circle(10,501,22,37,100,999,87,351)
 Shape.area()
 Shape.perimeter()
+
+# 4. convert the UML diagram into python class and its methods
+
+class TV:
+    def __init__(self,brand,price,inches,onoff_status):
+        self.brand = brand
+        self.channel = 1           # default value
+        self.volume = 50           # default value
+        self.price = price
+        self.inches = inches
+        self.onoff_status = onoff_status
+
+    def increase_volume(self):         # method to increase volume
+        if self.volume < 100:
+            self.volume += 1
+
+    def decrease_volume(self):         # method to decrease volume
+        if self.volume > 0:
+            self.volume -= 1
+
+    def set_channel(self):            # method to set the channel
+        if 1 <= self.channel <= 50:
+            print("Channel is set to:",self.channel)
+        else:
+            print("Channel not found")
+
+    def reset_tv(self):                 # method to reset the TV
+        print(f"volume: {self.volume}, channel: {self.channel}")
+
+    def status(self):                    # method to return the status
+        return f"{self.brand} at channel {self.channel},volume{self.volume}"
