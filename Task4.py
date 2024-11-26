@@ -106,3 +106,36 @@ print(Television.increase_volume())
 print(Television.decrease_volume())
 print(Television.set_channel(34))
 print(Television.status())
+
+class PlasmaTV(TV):
+    def __init__(self,brand,price,inches,onoff_status,screen_thickness,energy_usage,refresh_rate,viewing_angle,
+                 backlight):
+        self.screen_thickness = screen_thickness
+        self.energy_usage = energy_usage
+        self.refresh_rate = refresh_rate
+        self.viewing_angle = viewing_angle
+        self.backlight = backlight
+
+        TV.__init__(self,brand,price,inches,onoff_status)
+
+    def display_details(self):
+        return (f"PlasmaTV details: \n"
+              f"Brand : {self.brand} \n" 
+              f"Price : {self.price} \n"
+              f"Inches : {self.inches} \n"
+              f"On Off Status : {self.onoff_status} \n"
+              f"Screen Thickness : {self.screen_thickness} \n"
+              f"Energy Usage : {self.energy_usage} \n"
+              f"Refresh Rate : {self.refresh_rate} \n"
+              f"Viewing Angle : {self.viewing_angle} \n"
+              f"Backlight : {self.backlight}")
+
+Television_1 = PlasmaTV('Samsung','50000','32','Off','5','100W',
+                   '120Hz','wide','Full-Array')
+print(Television_1.display_details())
+print(Television_1.reset_tv())
+Television_1.volume = 87
+print(Television_1.increase_volume())
+print(Television_1.decrease_volume())
+print(Television_1.set_channel(34))
+print(Television_1.status())
