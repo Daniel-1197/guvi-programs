@@ -85,7 +85,7 @@ class LedTV(TV):
 
         TV.__init__(self,brand,price,inches,onoff_status)
 
-    def display_details(self):                                      # method to display the details
+    def display_details(self):                                  # method to display the details of LedTV
         return (f"LedTV details: \n"
               f"Brand : {self.brand} \n" 
               f"Price : {self.price} \n"
@@ -103,6 +103,7 @@ print(Television.display_details())
 print(Television.reset_tv())
 Television.volume = 87
 print(Television.increase_volume())
+Television.volume = 97
 print(Television.decrease_volume())
 print(Television.set_channel(34))
 print(Television.status())
@@ -118,7 +119,7 @@ class PlasmaTV(TV):
 
         TV.__init__(self,brand,price,inches,onoff_status)
 
-    def display_details(self):
+    def display_details(self):                      # method to display the details of LedTV
         return (f"PlasmaTV details: \n"
               f"Brand : {self.brand} \n" 
               f"Price : {self.price} \n"
@@ -130,12 +131,13 @@ class PlasmaTV(TV):
               f"Viewing Angle : {self.viewing_angle} \n"
               f"Backlight : {self.backlight}")
 
-Television_1 = PlasmaTV('Samsung','50000','32','Off','5','100W',
+Television_1 = PlasmaTV('Samsung','50000','32','On','5','100W',
                    '120Hz','wide','Full-Array')
 print(Television_1.display_details())
 print(Television_1.reset_tv())
-Television_1.volume = 87
+Television_1.volume = 43
 print(Television_1.increase_volume())
+Television_1.volume = 77
 print(Television_1.decrease_volume())
 print(Television_1.set_channel(34))
 print(Television_1.status())
