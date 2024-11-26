@@ -53,19 +53,56 @@ class TV:
     def increase_volume(self):         # method to increase volume
         if self.volume < 100:
             self.volume += 1
+            return f"Volume increased to {self.volume}"
 
     def decrease_volume(self):         # method to decrease volume
         if self.volume > 0:
             self.volume -= 1
+            return f"Volume decreased to {self.volume}"
 
-    def set_channel(self):            # method to set the channel
-        if 1 <= self.channel <= 50:
-            print("Channel is set to:",self.channel)
+    def set_channel(self,channel):            # method to set the channel
+        if 1 <= channel <= 50:
+            self.channel = channel
+            return f"Channel is set to {channel}"
         else:
-            print("Channel not found")
+            return "Channel not found"
 
     def reset_tv(self):                 # method to reset the TV
-        print(f"volume: {self.volume}, channel: {self.channel}")
+        return f"Resetting TV volume: {self.volume}, channel: {self.channel}"
 
     def status(self):                    # method to return the status
-        return f"{self.brand} at channel {self.channel},volume{self.volume}"
+        return f"{self.brand} at channel {self.channel},volume {self.volume}"
+
+# Part -B
+class LedTV(TV):
+    def __init__(self,brand,price,inches,onoff_status,screen_thickness,energy_usage,refresh_rate,viewing_angle,
+                 backlight):
+        self.screen_thickness = screen_thickness
+        self.energy_usage = energy_usage
+        self.refresh_rate = refresh_rate
+        self.viewing_angle = viewing_angle
+        self.backlight = backlight
+
+        TV.__init__(self,brand,price,inches,onoff_status)
+
+    def display_details(self):                                      # method to display the details
+        return (f"LedTV details: \n"
+              f"Brand : {self.brand} \n" 
+              f"Price : {self.price} \n"
+              f"Inches : {self.inches} \n"
+              f"On Off Status : {self.onoff_status} \n"
+              f"Screen Thickness : {self.screen_thickness} \n"
+              f"Energy Usage : {self.energy_usage} \n"
+              f"Refresh Rate : {self.refresh_rate} \n"
+              f"Viewing Angle : {self.viewing_angle} \n"
+              f"Backlight : {self.backlight}")
+
+Television = LedTV('Sony','42000','32','Off','5','80W',
+                   '120Hz','wide','Full-Array')
+print(Television.display_details())
+print(Television.reset_tv())
+Television.volume = 87
+print(Television.increase_volume())
+print(Television.decrease_volume())
+print(Television.set_channel(34))
+print(Television.status())
