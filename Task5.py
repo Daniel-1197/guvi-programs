@@ -4,7 +4,7 @@
 # result = filter(lambda x:x>4 , data)
 # print(list(result))
 
-#output : [10,501,22,37,100,999,87,351]
+#output : [10,501,22,37,100,999,87,351]          # All the elements in the given list are greater than 4 so the output has all the elements
 
 # 2. Python code using lambda function to check every element of a list is an integer or string
 # LAMBDA FUNCTION
