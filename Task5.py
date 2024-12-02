@@ -10,14 +10,14 @@
 # LAMBDA FUNCTION
 
 data = ['mango',24,'dani',7890]
-result =list(map(lambda x: "Integer" if type(x) == int else "string",data))
+result =list(map(lambda x: "Integer" if type(x) == int else "string",data))  #using if in lambda function
 print(result)
 
 # 3. Fibonacci series using python lambda function from 1 to 50
 # LAMBDA FUNCTION
 
 def fibonacci(x):
-    a,b = 1,1
+    a,b = 1,1           # first two elements of fibonacci series
     while a <= x:
         yield a
         a,b = b,a+b
