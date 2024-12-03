@@ -20,7 +20,7 @@ print(result)
 def fibonacci(x):
     a,b = 1,1           # first two elements of fibonacci series
     while a <= x:
-        yield a
+        yield a         # using generator
         a,b = b,a+b
 
 series = list(fibonacci(50))
