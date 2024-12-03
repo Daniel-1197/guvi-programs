@@ -36,7 +36,8 @@ email_id = "danielprem97@gmail.com"
 print(re.findall('@',email_id))
 print(re.findall('.com',email_id))
 phone_number = '+8801712345678'
-print(re.search('880',phone_number))
+print(re.search('^880',phone_number))          # Number should start with country code  
+
 
 
 
