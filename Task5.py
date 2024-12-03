@@ -40,7 +40,8 @@ print(re.search(r'^\+880',phone_number))
 Telephone_num = '+1 215 555-1234'
 print(re.search(r"^\+1",Telephone_num))       # c. Telephone Number of USA should start with country code  
 password = 'Xyzabcdefgh#123!'
-print(re.findall('[a-z]',password))            # d. to find alphabets
+print(re.findall('[a-z]',password))            # d. to find lower case alphabets
+print(re.findall('[A-Z]',password))            # d. to find upper case alphabets
 print(re.findall('\d',password))               # to find numbers
 
 
