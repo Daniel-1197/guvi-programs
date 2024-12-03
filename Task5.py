@@ -33,8 +33,8 @@ print(series)
 
 import re                                      # Importing regular expression from external library
 email_id = "danielprem97@gmail.com"
-print(re.search('@',email_id))
-print(re.search('.com',email_id))
+print(re.findall('@',email_id))
+print(re.findall('.com',email_id))
 phone_number = '+8801712345678'
 print(re.search('880',phone_number))
 
