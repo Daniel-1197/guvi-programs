@@ -42,8 +42,8 @@ print(re.search(r"^\+1",Telephone_num))       # c. Telephone Number of USA shoul
 password = 'Xyzabcdefgh#123!'
 print(re.findall('[a-z]',password))            # d. to find lower case alphabets
 print(re.findall('[A-Z]',password))            # d. to find upper case alphabets
-print(re.findall('\d',password))               # to find numbers
-print(re.findall('\W',password))               # to find special characters
+print(re.findall('\d',password))               # to find numbers (digits from 0-9)
+print(re.findall('\W',password))               # to find special characters (not a word character)
 
 
 
