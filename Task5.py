@@ -31,7 +31,7 @@ print(series)
 # c. telephone numbers of USA
 # d. 16 character alphanumeric password composed of alphabets of upper case,lower case,special characters,numbers
 
-import re
+import re                                      # Importing regular expression from external library
 email_id = "danielprem97@gmail.com"
 print(re.search('@',email_id))
 print(re.search('.com',email_id))
