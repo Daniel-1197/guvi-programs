@@ -44,6 +44,8 @@ print(re.findall('[a-z]',password))            # d. to find lower case alphabets
 print(re.findall('[A-Z]',password))            # d. to find upper case alphabets
 print(re.findall('\d',password))               # to find numbers (digits from 0-9)
 print(re.findall('\W',password))               # to find special characters (not a word character)
+print(re.match(".{16}",password))              # should have 16 characters
+
 
 
 
