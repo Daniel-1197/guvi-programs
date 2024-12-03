@@ -31,12 +31,14 @@ print(series)
 # c. telephone numbers of USA
 # d. 16 character alphanumeric password composed of alphabets of upper case,lower case,special characters,numbers
 
-import re                                      # Importing regular expression from external library
-email_id = "danielprem97@gmail.com"
+import re                                     # importing regular expression from external library
+email_id = "'danielprem97@gmail.com"
 print(re.findall('@',email_id))
 print(re.findall('.com',email_id))
-phone_number = '+8801712345678'
-print(re.search('^880',phone_number))          # Number should start with country code  
+phone_number = '+8801712345678'              # Phone Number of Bangladesh should start with country code 
+print(re.search(r'^\+880',phone_number))
+Telephone_num = '+1 215 555-1234'
+print(re.search(r"^\+1",Telephone_num))          # Telephone Number of USA should start with country code  
 
 
 
