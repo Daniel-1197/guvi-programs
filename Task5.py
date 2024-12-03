@@ -37,8 +37,8 @@ print(re.findall('@',email_id))              # a. validating gmail
 print(re.findall('.com',email_id))
 phone_number = '+8801712345678'              # b. Phone Number of Bangladesh should start with country code 
 print(re.search(r'^\+880',phone_number))
-Telephone_num = '+1 215 555-1234'
-print(re.search(r"^\+1",Telephone_num))       # c. Telephone Number of USA should start with country code  
+telephone_num = '+1 215 555-1234'
+print(re.search(r"^\+1",telephone_num))       # c. Telephone Number of USA should start with country code  
 password = 'Xyzabcdefgh#123!'
 print(re.findall('[a-z]',password))            # d. to find lower case alphabets
 print(re.findall('[A-Z]',password))            # d. to find upper case alphabets
