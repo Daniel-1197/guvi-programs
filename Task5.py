@@ -4,7 +4,7 @@
 # result = filter(lambda x:x>4 , data)
 # print(list(result))
 
-#output : [10,501,22,37,100,999,87,351]        # All the elements in given list are > 4 so output has all the elements
+#output: [10,501,22,37,100,999,87,351]   # All the elements in given list are > 4 so output has all the elements
 
 # 2. Python code using lambda function to check every element of a list is an integer or string
 # LAMBDA FUNCTION
@@ -29,7 +29,8 @@ print(series)
 # a. email address
 # b. mobile numbers of bangladesh
 # c. telephone numbers of USA
-# d. 16 character alphanumeric password composed of alphabets of upper case,lower case,special characters,numbers
+# d. 16 character alphanumeric password composed of alphabets of upper case,lower case,special characters,
+# numbers
 
 import re                                     # importing regular expression from external library
 email_id = "'danielprem97@gmail.com"
