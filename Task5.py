@@ -43,6 +43,7 @@ password = 'Xyzabcdefgh#123!'
 print(re.findall('[a-z]',password))            # d. to find lower case alphabets
 print(re.findall('[A-Z]',password))            # d. to find upper case alphabets
 print(re.findall('\d',password))               # to find numbers
+print(re.findall('\W',password))               # to find special characters
 
 
 
