@@ -64,4 +64,51 @@ with open(file="notes.txt",mode="r") as file_obj:
  print(file_obj.read())
 
 
+#1.	FizzBuzz Problem: Write a Python program that prints each number from 1 to 100 on a new line. For each multiple of 3, print "Fizz" instead of the number. For each multiple of 5, print "Buzz" instead of the number. For numbers which are multiples of both 3 and 5, print "FizzBuzz".
+
+# for i in range(1,101):
+#     if i % 3 ==0:
+#         print("Fizz")
+#     elif i % 5==0:
+#         print("Buzz")
+#     elif i % 3==0 and i % 5==0:
+#         print("FizzBuzz")
+#     else:
+#         print(i)
+
+#2.	Reverse a String: Reverse a string [‘1’,2,’hello’,True] without using any built-in function
+
+#lst1= [‘1’,2,’hello’,True]
+#rev_lst
+
+
+
+#3.	Find the Missing Number: Given a list of numbers  [1,2,3,4,7,9,6,10]with numbers missing, print the missing number?
+# lst2=[1,2,3,4,7,9,6,10]
+# minimum_lst2=min(lst2)
+# maximum_lst2=max(lst2)
+# total_range=range(minimum_lst2,maximum_lst2+1)
+# missing_num=[]
+# for i in total_range:
+#     if i not in lst2:
+#         missing_num.append(i)
+# print(missing_num)
+
+#4.	Detect Duplicates in an Array: Print duplicate number (1,2,3,3,4,5) ?
+lst3=[1,2,3,3,4,5]
+seen=[]
+duplicates=[]
+for i in lst3:
+    if i in seen:
+        duplicates.append(i)
+    else:
+        seen.append(i)
+print(duplicates)
+
+
+
+
+
+
+
 
