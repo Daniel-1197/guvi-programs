@@ -105,6 +105,27 @@ for i in lst3:
         seen.append(i)
 print(duplicates)
 
+#5 palindrome
+# mystr = input("Enter the string: ")
+# mystr = mystr.lower().replace(" ","")
+# rev_mystr = mystr[::-1]
+# if mystr == rev_mystr:
+#     print(True)
+# else:
+#     print(False)
+
+#6.anagram
+# str_x = input("Enter the string: ")
+# str_y = input("Enter the another string: ")
+# str_x = str_x.lower()
+# str_y = str_y.lower()
+# sorted_x = sorted(str_x)
+# # sorted_y = sorted(str_y)
+# # if sorted_x == sorted_y :
+# #     print(True)
+# # else:
+# #     print(False)
+
 
 
 
