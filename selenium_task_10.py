@@ -1,3 +1,5 @@
+#locating elements from the given URL using python selenium automation
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from time import sleep        
